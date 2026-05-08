@@ -6,7 +6,6 @@ from datetime import datetime
 
 from dotenv import load_dotenv
 from pathlib import Path
-import os
 
 env_path = Path(__file__).resolve().parent.parent / ".env"
 
@@ -24,10 +23,10 @@ cities = [
     "Bhopal", "Visakhapatnam", "Pimpri-Chinchwad", "Patna", "Vadodara", 
     "Ghaziabad", "Ludhiana", "Agra", "Nashik", "Faridabad", 
     "Meerut", "Rajkot", "Kalyan-Dombivli", "Vasai-Virar", "Varanasi", 
-    "Srinagar", "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", 
+    "Bareilly", "Aurangabad", "Dhanbad", "Amritsar", "Navi Mumbai", 
     "Srinagar", "Ranchi", "Howrah", "Coimbatore", "Jabalpur", 
     "Gwalior", "Vijayawada", "Jodhpur", "Madurai", "Raipur", 
-    "Kota", "Guwahati", "Chandigarh", "Solapur", "Jaipur"
+    "Kota", "Guwahati", "Chandigarh", "Solapur", "Aligarh"
 ]
 
 
@@ -41,7 +40,7 @@ def get_weather_data(city):
         response = requests.get(url, timeout=10)
 
         if response.status_code != 200:
-            print(f"Error fetching data for {city}")
+            print(f"{city}: {response.status_code}")
             return None
 
         data = response.json()

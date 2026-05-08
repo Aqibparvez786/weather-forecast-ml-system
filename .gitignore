@@ -3,4 +3,5 @@ __pycache__/
 .ipynb_checkpoints/
 cron.log
 weather_data.csv
+.directory
 *.pyc
