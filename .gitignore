@@ -1,0 +1,6 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+cron.log
+weather_data.csv
+*.pyc
