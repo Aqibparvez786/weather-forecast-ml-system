@@ -92,7 +92,7 @@ for city in cities:
         all_weather_data.append(weather)
 
 df = pd.DataFrame(all_weather_data)
-CSV_FILE = "/home/Aqib/Desktop/weather_forecast/weather_data.csv"
+CSV_FILE = "/home/Aqib/Desktop/weather_forecast/live_data/weather_data.csv"
 
 file_exists = os.path.isfile(CSV_FILE)
 
