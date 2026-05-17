@@ -1,72 +1,77 @@
 # Weather Forecast ML System
 
-A real-time weather forecasting and analytics project built using machine learning and automated data pipelines.
+An end-to-end machine learning project focused on real-time weather forecasting, automated data collection, and full-stack deployment.
 
-This project started as an attempt to understand how real-world ML systems are built beyond just training a model. The goal is to build a complete end-to-end weather forecasting platform that handles data collection, analysis, feature engineering, model training, deployment, and automation.
+The main goal of this project is to understand how real-world machine learning systems are built beyond just model training. The project covers the complete workflow — from collecting live weather data and performing analysis to building forecasting models, creating a web dashboard, and exploring deployment and MLOps practices.
 
-The system continuously collects live weather data from multiple Indian cities using the OpenWeatherMap API and stores it for forecasting and analysis.
+Live weather data is collected continuously using the OpenWeatherMap API for multiple Indian cities and stored for analysis and forecasting.
 
 ---
 
-## Current Progress
+## Project Status
 
 ### Completed
 - Automated weather data collection using OpenWeatherMap API
 - Hourly cron-based data pipeline on Linux
-- Historical dataset creation and storage
+- Historical weather dataset generation
 - Exploratory Data Analysis (EDA)
-- Profiling reports and visualization
+- Profiling reports and visual analysis
 - Time-series feature engineering
-- Lag and rolling window features
-- Feature importance analysis using Random Forest
+- Lag and rolling window feature creation
+- Feature importance analysis
+- Baseline Random Forest forecasting model
+- Hyperparameter tuning using GridSearchCV
+- Model evaluation and prediction analysis
 
-### In Progress
-- Forecast model training and evaluation
-- Hyperparameter tuning
-- Prediction pipeline
+### Currently Working On
+- Improving forecasting performance with larger datasets
+- Experimenting with additional features and model optimization
+- Saving and versioning trained models
 
 ### Planned
+- PostgreSQL database integration
 - Django-based weather dashboard
-- Forecast visualization UI
-- Database integration
-- Model deployment
-- MLOps workflow and automated retraining
+- Forecast visualization interface
+- Model deployment pipeline
+- Automated retraining workflow
+- Introductory MLOps integration
 
 ---
 
 ## Features
 
-- Live weather data collection
+- Real-time weather data collection
 - Multi-city weather monitoring
-- Automated hourly updates using cron jobs
+- Automated hourly data updates
 - Historical weather tracking
 - Time-series forecasting pipeline
-- Feature engineering for weather prediction
+- Feature engineering for forecasting
+- Model training and evaluation
 - Data visualization and profiling
-- Modular project structure for deployment
+- Modular project structure for scalability
 
 ---
 
 ## Tech Stack
 
-### Data & Machine Learning
+### Machine Learning & Data Processing
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
 
-### Visualization & Analysis
+### Data Visualization
 - Matplotlib
 - Seaborn
 - ydata-profiling
 
-### Backend & Deployment
+### Backend & Automation
 - Django
 - Linux Cron Jobs
 - Conda Environment
 - Git & GitHub
 
-### APIs
+### APIs & Data Sources
 - OpenWeatherMap API
 
 ---
@@ -77,6 +82,8 @@ The system continuously collects live weather data from multiple Indian cities u
 weather_forecast/
 │
 ├── data/
+├── live_data/
+├── models/
 ├── notebooks/
 ├── reports/
 ├── scripts/
